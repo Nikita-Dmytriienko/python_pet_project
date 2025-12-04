@@ -2,6 +2,7 @@ from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Body, Request
 
+
 from db import Base, engine, get_user_requests, add_request_data
 from gemini_client import get_answer_from_gemini
 
