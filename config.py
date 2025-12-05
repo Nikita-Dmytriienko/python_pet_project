@@ -1,7 +1,14 @@
 ﻿import os
 from dotenv import load_dotenv
+from pathlib import Path
 
-load_dotenv()
+env_path = Path(__file__).parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
+print("Current dir:", os.getcwd())
+print("root .env", env_path)
+print("Load .env:", load_dotenv(dotenv_path=env_path)) #True of False
+print("GEMINI_API_KEY loaded:", bool(os.getenv("GEMINI_API_KEY"))) #++
 
 class Config:
     gemini_api_key = os.getenv("GEMINI_API_KEY")
