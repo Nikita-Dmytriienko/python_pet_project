@@ -2,7 +2,7 @@
 
 Hey, this is my little pet project: a minimal web chat with Google's Gemini AI. You type a prompt, it answers, and everything gets saved in a local SQLite database tied to your IP. Your chat history shows up only for you when you reload the page.
 
-Super simple — one HTML file for the frontend, FastAPI backend, and Gemini handling the heavy lifting.
+Built with **FastAPI + SQLAlchemy 2.0 + SQLite + Google GenAI**.
 
 ## Requirements
 
